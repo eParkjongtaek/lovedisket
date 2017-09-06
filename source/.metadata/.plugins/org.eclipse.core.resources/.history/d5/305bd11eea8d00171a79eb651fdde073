@@ -1,0 +1,10 @@
+package aug30;
+
+public class RandomAccessFileEx {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package aug31;
+
+import java.net.*;
+
+public class NetworkEx2 {
+
+	public static void main(String[] args) {
+		
+		URL url = new URL("http://docs.oracle.com/javase/7/docs/api/overview-summary.html");
+		
+	}
+
+}

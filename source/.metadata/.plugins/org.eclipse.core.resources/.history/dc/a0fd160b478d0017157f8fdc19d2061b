@@ -1,0 +1,14 @@
+package aug30;
+
+import java.io.*;
+
+public class FileEx {
+
+	public static void main(String[] args) {
+		
+		String filepath = "C:\\Users\\user1\\Downloads";
+		File f1 = new File(filepath);
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+<%@ page contentType="text/html; charset=euc-kr" %>
+<%@ page import="java.io.*" %>
+<html>
+	<head><title>절대 경로 사용하여 자원 읽기</title></head>
+	<body>
+	<%
+		FileReader fr = null;
+		char[] buff = new char[512];
+	%>
+	</body>
+</html>

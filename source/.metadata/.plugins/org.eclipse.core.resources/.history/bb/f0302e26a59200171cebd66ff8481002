@@ -1,0 +1,10 @@
+<%@ page contentType="text/html; charset=euc-kr" %>
+<html>
+	<head><title>pageContext ±âº» °´Ã¼</title></head>
+	<body>
+	<%
+		HttpServletRequest httpRequest =
+			(HttpServletRequest)pageContext.getRequest();
+	%>
+	</body>
+</html>

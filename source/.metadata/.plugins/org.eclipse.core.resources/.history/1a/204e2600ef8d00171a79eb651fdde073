@@ -1,0 +1,21 @@
+package aug30;
+
+import java.io.*;
+import java.util.*;
+
+public class ScannerReadableEx {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = null;
+		FileReader fr = null;
+		
+		try
+		{
+			fr = new FileReader("C:\\data\\scan.txt");
+			scan = new Scanneer(fr);
+		}
+
+	}
+
+}

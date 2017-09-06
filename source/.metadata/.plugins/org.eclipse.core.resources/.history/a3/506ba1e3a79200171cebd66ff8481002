@@ -1,0 +1,12 @@
+<%@ page contentType="text/html; charset=euc-kr" %>
+<%@ page import = "java.io.*" %>
+<html>
+	<head><title>application 기본 객체 사용하여 자원 읽기</title></head>
+	<body>
+	<%
+		String resourcePath = "/0906/09notice.txt";
+	%>
+	자원의 실제 경로 : <br>
+	<%=application.getRealPath(resourcePath) %>
+	</body>
+</html>

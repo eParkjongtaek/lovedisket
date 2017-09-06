@@ -1,0 +1,49 @@
+package aug11;
+
+public class rotto {
+
+	
+	
+	public static void main(String[] args) {
+		
+		int cool[] = new int[6];
+		int real_cool[] = new int[6];
+		int not_real_cool[] = new int[6];
+		int j = 1;
+		boolean chk = true;	
+		
+	    for (int i = 0; i < cool.length; i++) {
+	    	cool[i] = (int)(Math.random() * 46) + 1;
+
+	    	
+	    	//for (int j = 0; j < real_cool.length; j++) {
+	    		
+	    		while(true)
+	    		{	    			
+	    			if(real_cool[j] != cool[i]) 
+	    			{
+	    				real_cool[j] = cool[i];
+
+	    		    	System.out.println(real_cool[i]);
+	    				
+	    				
+	    				if(real_cool.length > 5) break;
+	    				
+	    			}
+	    		}
+		    	
+	    	//}		    	
+	    	
+	    }		
+		
+	    for (int z = 0; z < real_cool.length; z++) 
+	    {
+	    	
+	    	System.out.print(real_cool[z] + "\t");
+	    	
+	    }
+	    
+		
+	}
+
+}

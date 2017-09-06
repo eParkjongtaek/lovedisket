@@ -1,0 +1,65 @@
+package aug31;
+
+import java.net.*;
+import java.util.*;
+import static java.lang.System.out;
+
+public class NetworkEx1 {
+
+	public static void main(String[] args) {
+		
+		InetAddress ip = null;
+		InetAddress[] ipArr = null;
+		
+		try
+		{
+			ip = InetAddress.getByName("www.daum.net");
+			out.println("getHostName() : " + ip.getHostName());
+			out.println("getHostAddress() : " + ip.getHostAddress());
+			out.println("toString() : "+ ip.toString());
+			
+			byte[] ipAddr = ip.getAddress();
+			out.println("getAddress() : "+Arrays.toString(ipAddr));
+			
+			String result = "";
+			for(int i=0;i<ipAddr.length;i++)
+			{
+				result += (ipAddr[i] < 0) ? ipAddr[i] + 256 : ipAddr[i];
+				result += ".";
+			}
+			out.println("getAddress()+256 : " + result);
+			out.println();
+		}
+		catch(UnknownHostException e)
+		{
+			e.printStackTrace();
+		}
+		
+		try
+		{
+			ip = InetAddress.getLocalHost();
+			out.println("getHostName() : " + ip.getHostName());
+			out.println("getHostAddress() : " + ip.getHostAddress());
+			out.println();
+		}
+		catch(UnknownHostException e)
+		{
+			e.printStackTrace();
+		}
+		
+		try
+		{
+			ipArr = InetAddress.getAllByName("www.daum.net");
+			for(int i=0;i<ipArr.length;i++)
+			{
+				out.println("ipArr["+i+"] : " + ipArr[i]);
+			}			
+		}
+		catch(UnknownHostException e)
+		{
+			e.printStackTrace();
+		}
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package aug17;
+
+class StaticTest2_1{
+
+	static String s1 = "static"; //instance
+	static String s2 = "STATIC"; //static
+
+	public static String getString(){ //static
+		return s1; // 여기서 만약 s1을 return하면 오류!
+	}
+}
+////////////////////////////////////////////////////////////
+class StaticTest2 {
+
+	public static void main(String[] args){
+		System.out.println("s1 : " + StaticTest2_1.getString());
+	}
+}
+
+
+
+
+
+
+
+
+
+

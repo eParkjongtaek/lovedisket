@@ -1,0 +1,25 @@
+package aug31;
+
+import java.net.InetAddress;
+import java.rmi.UnknownHostException;
+
+public class NetworkEx1 {
+
+	public static void main(String[] args) {
+		
+		InetAddress ip = null;
+		InetAddress[] ipArr = null;
+		
+		try
+		{
+			ip = InetAddress.getByName("www.daum.net");
+			System.out.println("getHostName() : ",ip.getHostName());
+		}
+		catch(UnknownHostException e)
+		{
+			e.printStackTrace();
+		}
+
+	}
+
+}

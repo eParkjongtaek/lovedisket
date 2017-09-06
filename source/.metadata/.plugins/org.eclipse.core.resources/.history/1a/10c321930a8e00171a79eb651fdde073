@@ -1,0 +1,15 @@
+package aug31;
+
+import java.net.*;
+
+public class InetAddressEx {
+
+	public static void main(String[] args) {
+		
+		InetAddress iaddr = InetAddress.getLocalHost();
+		System.out.printf("호스트 이름 :  %s %n",  iaddr.getHostName());
+		System.out.printf("호스트 IP 주소 : ", iaddr.getHostAddress());
+		
+	}
+
+}

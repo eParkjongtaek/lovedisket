@@ -1,0 +1,15 @@
+package aug30;
+
+public class ScannerFileEx {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = null;
+		try 
+		{
+			scan = new Scanner(new File("C:\\data"));
+		}
+
+	}
+
+}

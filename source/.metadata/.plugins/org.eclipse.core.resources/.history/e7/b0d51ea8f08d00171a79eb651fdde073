@@ -1,0 +1,17 @@
+package aug30;
+
+import java.util.Scanner;
+
+public class ScannerConsoleEx {
+
+	public static void main(String[] args) {
+		
+		System.out.print("ют╥б : ");
+		
+		Scanner scan = new Scanner(System.in);
+		
+		String number = scan.next();
+
+	}
+
+}

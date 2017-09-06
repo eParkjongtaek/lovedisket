@@ -1,0 +1,21 @@
+package aug30;
+
+import java.util.Scanner;
+
+public class ScannerFileEx {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = null;
+		try 
+		{
+			scan = new Scanner(new File("C:\\data\\scan.txt"));
+			while(scan.hasNext())
+			{
+				System.out.printf("½ºÄµ : %s %n", scan.next())
+			}
+		}
+
+	}
+
+}
